@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.warsaw.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/warsaw"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/menu_image_height"
+            android:layout_height="@dimen/menu_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/museum" />
+
+        <TextView
+            android:id="@+id/museums"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_image_height"
+            android:background="@color/museums"
+            android:gravity="center"
+            android:text="@string/museums"
+            android:textSize="@dimen/menu_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/menu_image_height"
+            android:layout_height="@dimen/menu_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/parks" />
+
+        <TextView
+            android:id="@+id/parks"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_image_height"
+            android:background="@color/parks"
+            android:gravity="center"
+            android:text="@string/parks"
+            android:textSize="@dimen/menu_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/menu_image_height"
+            android:layout_height="@dimen/menu_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/restaurants" />
+
+        <TextView
+            android:id="@+id/restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_image_height"
+            android:background="@color/restaurants"
+            android:gravity="center"
+            android:text="@string/restaurants"
+            android:textSize="@dimen/menu_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/menu_image_height"
+            android:layout_height="@dimen/menu_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotels" />
+
+        <TextView
+            android:id="@+id/hotels"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_image_height"
+            android:background="@color/hotels"
+            android:gravity="center"
+            android:text="@string/hotels"
+            android:textSize="@dimen/menu_text"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Warsaw</string>
+    <string name="museums">Museums</string>
+    <string name="parks">Parks</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+</resources>
