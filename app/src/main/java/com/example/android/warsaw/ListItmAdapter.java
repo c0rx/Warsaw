@@ -19,24 +19,24 @@ public class ListItmAdapter extends ArrayAdapter<ListItm> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
         ListItm currentItem = getItem(position);
 
-        TextView theTitle = listItemView.findViewById(R.id.name);
+        TextView theTitle = convertView.findViewById(R.id.name);
         theTitle.setText(currentItem.getName());
 
-        TextView theDescription = listItemView.findViewById(R.id.description);
+        TextView theDescription = convertView.findViewById(R.id.description);
         theDescription.setText(currentItem.getDescription());
 
-        ImageView theImage = listItemView.findViewById(R.id.image);
+        ImageView theImage = convertView.findViewById(R.id.image);
         theImage.setImageResource(currentItem.getImage());
 
-        return listItemView;
+        return convertView;
     }
 }
 

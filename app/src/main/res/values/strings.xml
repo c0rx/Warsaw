@@ -4,4 +4,6 @@
     <string name="parks">Parks</string>
     <string name="restaurants">Restaurants</string>
     <string name="hotels">Hotels</string>
+    <string name="sample_name">Sample Name</string>
+    <string name="sample_desc">Sample Description</string>
 </resources>
